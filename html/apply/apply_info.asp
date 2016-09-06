@@ -108,14 +108,6 @@
 
     <h2 class="headding"><span>참가등록</span></h2>
 
-    <!-- 단락 -->
-    <div class="first-tap">
-        <ul class="nav nav-pills nav-justified">
-            <li class="active"><a href="/mobile/html/apply/apply_info.asp">참가신청 안내</a></li>
-            <li><a href="/mobile/html/apply/apply.asp">참가신청</a></li>
-            <li><a href="/mobile/html/mypage/apply_confirm.asp">참가신청 확인</a></li>
-        </ul>
-    </div>
 
     <h3 class="subject"><span>참가신청 안내</span></h3>
 
@@ -123,15 +115,16 @@
         <dl class="apply_info">
             <dt>등록방법</dt>
             <dd>홈페이지를 통한 온라인 참가신청&nbsp;&nbsp;&nbsp;</dd>
-            <dd class="text-center apply_btn" style="display:block;"><a class="btn btn-primary btn-lg" href="/mobile/html/apply/apply.asp" role="button">참가신청 바로 가기<i class="next glyphicon glyphicon-menu-right"></i></a></dd>
+
             <dd class="blank">
             <dt>등록기간</dt>
             <dd><time datetime="2016-09-01">2016년 9월 1일(목)</time> ~ <time datetime="2016-10-21">10월 21일(금)</time></dd>
-            <dd>※ 선착순 300명 마감</dd>
+            <dd>※ 장소가 협소한 관계로 조기 마감 될 수 있습니다.</dd>
             <dd class="blank">
             <dt>참가비</dt>
             <dd>회원사 - 무료 (비회원사 - 200,000원)</dd>
-            <dd>※ 1개사 2인까지 등록가능하며, 3인 이상 등록하실 경우 사무국으로 문의 주시기 바랍니다.</dd>
+            <dd>※ 회원사 당 2명 등록가능합니다.<br/></dd>
+            <dd>(추가 등록을 원하는 경우 사무국으로 문의 부탁드립니다.)</dd>
             <dd class="blank">
             <dt>참가비 포함 내역</dt>
             <dd>포럼 입장권, 자료집, 오찬</dd>
@@ -159,8 +152,17 @@
                     </dl>
                 </div>
             </dd>
+            <dd class="text-center apply_btn" style="display:block; width:100%;"><a style="width:100%;" class="btn btn-primary btn-lg" href="/mobile/html/apply/apply.asp" role="button">참가신청 바로 가기<i class="next glyphicon glyphicon-menu-right"></i></a></dd>
         </dl>
     </section>
+    <!-- 단락 -->
+    <div class="first-tap">
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="/mobile/html/apply/apply_info.asp">참가신청 안내</a></li>
+            <li><a href="/mobile/html/apply/apply.asp">참가신청</a></li>
+            <li><a href="/mobile/html/mypage/apply_confim.asp">참가신청 확인</a></li>
+        </ul>
+    </div>
 
 
 

@@ -154,11 +154,11 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
         <ul>
           <li class="col-xs-6">
               <span>입금자명</span>
-              <span>조한수</span>
+              <span><%=Reg_Kname%></span>
           </li>
           <li class="col-xs-6">
               <span>계산서 발행여부</span>
-              <span><%if Reg_PayTexV = "Y" then%>발행<%end if%> 
+              <span><%if Reg_PayTexV = "Y" then%>발행<%end if%>
                              <%if Reg_PayTexV = "N" then%>미발행<%end if%></span>
           </li>
           <li class="col-xs-12">
@@ -182,7 +182,7 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
           </li>
           <li class="col-xs-12">
                 <span>사업자 등록증</span>
-                <span><img src="upload/<%=Reg_PP_File1%>" width="200px" alt="사본"><br><%=Reg_PP_File1%></span>
+                <span><img src="../../../upload/<%=Reg_PP_File1%>" width="200px" alt="사본"><br><%=Reg_PP_File1%></span>
           </li>
         </ul>
     </div>
@@ -194,10 +194,10 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
 
 
 
- 
+
 <form method="post"  name="frm" id="frm" action="registApply.asp">
-    
-            
+
+
 <input type="hidden" name="Reg_idx"  value="<%=Reg_idx%>">
 <input type="hidden" name="Reg_Wdate"  value="<%=Reg_Wdate%>">
 <input type="hidden" name="Reg_Edate"  value="<%=Reg_Edate%>">

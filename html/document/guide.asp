@@ -26,7 +26,7 @@
     <p></p>
 
     <div class="first-tap">
-        <ul class="nav nav-pills nav-justified">
+        <ul class="nav nav-pills">
             <li class="active"><a href="">tap1</a></li>
             <li><a href="">tap1</a></li>
             <li><a href="">tap1</a></li>

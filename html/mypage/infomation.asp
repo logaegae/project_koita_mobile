@@ -8,9 +8,9 @@
 Reg_idx = session("Reg_idx")
 
 SQL = "SELECT * FROM  RegData where Reg_Type = 'Y' and Reg_idx='"& Reg_idx &"'"
-									
+
 	Set Rs = server.createObject("ADODB.Recordset")
-									
+
 		Rs.open SQL,DBConn
 
 
@@ -133,19 +133,11 @@ margin-bottom: 30px;}
     <!-- 제목 -->
     <h2 class="headding"><span>등록내역</span></h2>
 
-    <div class="first-tap">
-        <ul class="nav nav-pills nav-justified">
-            <li class="active"><a href="infomation.asp">등록내역</a></li>
-            <li><a href="apply_confim.asp">참가신청현황</a></li>
-            <li><a href="speech.asp">연사에게 질문하기</a></li>
-        </ul>
-    </div>
+
 
     <h4 class="strongElement"><span>기본정보</span></h4>
 
-    <div class="alert alert-info alert-dismissible" role="alert">
-      표시가 있는경우, <strong>필수항목</strong>이오니 반드시 입력해 주시기 바랍니다.
-    </div>
+
 
     <div class="list-infomation">
         <ul>
@@ -182,10 +174,6 @@ margin-bottom: 30px;}
     <div class="clear"></div>
     <h4 class="strongElement"><span>등록비 결제 (비회원사)</span></h4>
 
-    <div class="alert alert-info alert-dismissible" role="alert">
-      * 공식 프로그램 <strong>참석여부</strong>를 체크하여 주시기 바랍니다.
-    </div>
-
 
     <div class="list-infomation">
         <ul>
@@ -214,7 +202,7 @@ margin-bottom: 30px;}
           </li>
           <li class="col-xs-6">
               <span>계산서 발행여부</span>
-              <span><%if Reg_PayTexV = "Y" then%>발행<%end if%> 
+              <span><%if Reg_PayTexV = "Y" then%>발행<%end if%>
                              <%if Reg_PayTexV = "N" then%>미발행<%end if%></span>
           </li>
 
@@ -234,7 +222,13 @@ margin-bottom: 30px;}
         <a href="/mobile/html/login/doLogout.asp" class="btn btn-primary btn-block btn-lg">로그아웃</a>
     </div>
 
-
+		<div class="first-tap">
+        <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="infomation.asp">등록내역</a></li>
+            <li><a href="apply_confim.asp">참가신청현황</a></li>
+            <li><a href="speech.asp">연사에게 질문하기</a></li>
+        </ul>
+    </div>
 </div>
 
 

@@ -67,29 +67,22 @@ ul,li{
     <h2 class="headding"><span>마이페이지</span></h2>
 
 
-    <div class="first-tap">
-        <ul class="nav nav-pills nav-justified">
-            <li><a href="infomation.asp">등록내역</a></li>
-            <li><a href="apply_confim.asp">참가신청현황</a></li>
-            <li class="active"><a href="speech.asp">연사에게 질문하기</a></li>
-        </ul>
-    </div>
 
     <h4 class="strongElement"><span>질문하기 작성</span></h4>
 	<form method="post"  name="frm" id="frm" action="doSpeech.asp" >
 	<input name="Qna_CompanyIdx"  type="hidden" id="Qna_CompanyIdx" value="<%=session("Reg_idx")%>" >
     <div class="btn-group select_tg">
           <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="person">Martin G. Curley | Maynooth University(Ireland)...&nbsp;&nbsp;&nbsp;</span> <span class="caret"></span>
+              <span class="person select_con">Sanjeev Gandhi | 바스프(BASF)<br /> 아시아 지역 총괄 대표</a></span> <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Martin G. Curley | Maynooth University<br />(Ireland)교수 前 Intel 부사장(유럽법인 대표)</a></li>
-            <li><a href="#">Sanjeev Gandhi | 바스프(BASF)<br /> 아시아 지역 총괄 대표</a></li>
-            <li><a href="#">Jim Rusk | 지멘스(SIEMENS)<br /> 수석부사장 겸 CTO</a></li>
-            <li><a href="#">Frank Schaefers | 보쉬(Bosch)<br /> 한국법인 대표이사</a></li>
-            <li><a href="#">Andre Nothomb | 솔베이(SOLVAY)<br /> 아시아 태평양 지역본부 대표 겸<br /> 솔베이 코리아 대표이사</a></li>
-            <li><a href="#">Naoto Yanagihara | 후지필름(FUJIFILM)<br /> 혁신전략 부사장</a></li>
-            <li><a href="#">Semyon Kogan | GEN3 Partners* 대표이사</a></li>
+            <li><a>Martin G. Curley | Maynooth University<br />(Ireland)교수 前 Intel 부사장(유럽법인 대표)</a></li>
+            <li><a>Sanjeev Gandhi | 바스프(BASF)<br /> 아시아 지역 총괄 대표</a></li>
+            <li><a>Jim Rusk | 지멘스(SIEMENS)<br /> 수석부사장 겸 CTO</a></li>
+            <li><a>Frank Schaefers | 보쉬(Bosch)<br /> 한국법인 대표이사</a></li>
+            <li><a>Andre Nothomb | 솔베이(SOLVAY)<br /> 아시아 태평양 지역본부 대표 겸<br /> 솔베이 코리아 대표이사</a></li>
+            <li><a>Naoto Yanagihara | 후지필름(FUJIFILM)<br /> 혁신전략 부사장</a></li>
+            <li><a>Semyon Kogan | GEN5 GROUP 대표이사</a></li>
           </ul>
 
           <select name="Qna_SPK" id="Qna_SPK" style="width:100%" class="ref">
@@ -99,7 +92,7 @@ ul,li{
               <option value="Frank Schaefers" <%if Qna_SPK = "Frank Schaefers" then %> selected <% end if %>>Frank Schaefers | 보쉬(Bosch) 한국법인 대표이사</option>
               <option value="Andre Nothomb" <%if Qna_SPK = "Andre Nothomb" then %> selected <% end if %>>Andre Nothomb | 솔베이(SOLVAY) 아시아 태평양 지역본부 대표 겸 솔베이 코리아 대표이사</option>
               <option value="Naoto Yanagihara" <%if Qna_SPK = "Naoto Yanagihara" then %> selected <% end if %>>Naoto Yanagihara | 후지필름(FUJIFILM) 혁신전략 부사장</option>
-              <option value="Semyon Kogan" <%if Qna_SPK = "Semyon Kogan" then %> selected <% end if %>>Semyon Kogan | GEN3 Partners* 대표이사</option>
+              <option value="Semyon Kogan" <%if Qna_SPK = "Semyon Kogan" then %> selected <% end if %>>Semyon Kogan | GEN5 GROUP 대표이사</option>
         </select>
 
     </div>
@@ -174,6 +167,13 @@ end if
       </ul>
     </div>
 
+    <div class="first-tap">
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="infomation.asp">등록내역</a></li>
+            <li><a href="apply_confim.asp">참가신청현황</a></li>
+            <li class="active"><a href="speech.asp">연사에게 질문하기</a></li>
+        </ul>
+    </div>
 
 
 </div>
@@ -214,9 +214,6 @@ end if
 
 <!-- content end -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="/mobile/lib/bootsdtap-3.3.2-dist/js/bootsdtap.min.js"></script>
-<scropt src="/mobile/lib/js/script.js"></scropt>
 
 </body>
 </html>

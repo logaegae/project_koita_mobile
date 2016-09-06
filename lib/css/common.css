@@ -16,6 +16,7 @@ background-size: 70%;}
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{background-color:rgba(69,83,163,0.8); color:#FFF}
 .nav.nav-pills>li>a{color:#666; border:1px #333 solid;}
 .nav.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{background-color:#333; color:#FFF;}
+.first-tap{margin-top:20px;}
 
 /*guide*/
 h1.title{font-size:1.8em}
@@ -82,3 +83,21 @@ h4.strongElement span{display:block; border-left:5px #00A1E9 solid; padding-left
 .program_table i.flaticon-eye::before{margin:0; font-size: 14px; vertical-align: middle;}
 .program_table i.flaticon-question-speech-bubble::before{margin: 0; font-size: 14px; vertical-align: middle;}
 .program_table i.flaticon-link::before{margin-left: 0; font-size: 15px;}
+
+
+/*footer*/
+footer{margin-top:30px; padding:20px 0; background:#222127; border-top:2px #000 solid}
+footer .call-list>ul>li{padding:5px 0; margin-top:10px}
+footer .row>ul>li{margin:20px 0}
+footer li i::before {color:#8F8E93; margin-left:10px !important;}
+footer li i{font-size:20px; text-align: center}
+footer .call-list>li{margin:0}
+footer .call-list li div>span{display:block; font-size:14px; line-height:28px;}
+footer .call-list>li span span{color:#8F8E93; margin-right:5px;}
+footer .call-list>li span a{color:#8F8E93;}
+footer .titler_img img{width:100%;}
+footer .titler_img{margin-bottom:10px;}
+
+footer .address>ul>li{margin:20px;}
+a.orange{color:#FFF !important;}
+a.blue{color:#FFF !important;}

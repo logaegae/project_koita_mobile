@@ -1,4 +1,9 @@
 <!--#include virtual="/mobile/html/inc/config.asp"-->
+<script type='text/javascript' src='../../../js/jquery.min.js'></script>
+
+<script type="text/javascript" src="../../../js/jquery.bxslider.min.js" ></script>
+
+<script type="text/javascript" src="../../../js/gnb.js" ></script>
 
 <%
 
@@ -155,13 +160,74 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
         }
         .next_btn input{
             font-size:14px;
-            width:30%;
+            width:100%;
         }
         .next_btn{
             margin-bottom:15px;
         }
 
+
+		.SHbtn {
+   background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+.SHbtn:hover {
+  background: #FFF;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/*input관련*/
+input { height:30px; border:#bbbbbb solid 1px; font-size:17px; color: #555555;  background:#ffffff; }
+textarea {border:#bbbbbb solid 1px; font-size:17px; color: #555555;  background:#ffffff;  overflow-y: auto;}
+select{ height:30px;font-size: 18px; color: #555555;  border: 1px solid #bbbbbb; background:#ffffff; letter-spacing:-1px;  }
+input[type="radio"] {vertical-align:middle; padding:0; margin:0; background-color:transparent; border:0;}
+input[type="checkbox"] {vertical-align:middle; padding:0; margin:0; background-color:transparent; border:0;}
+
+
+
+
+/*세로형 테이블*/
+.viewtable {border-top:#666666 solid 2px;}
+.viewtable thead th {font-size: 18px;  border-bottom:#bbbbbb solid 1px; font-family: 'Nanum Gothic','verdana','arial','dotum', '돋움'; color: #ffffff; background-color:#b9ab9e;}
+.viewtable td {font-size: 15px; text-height:22px; color: #555555; border-bottom:#bbbbbb solid 1px;font-family: 'Nanum Gothic','verdana','arial','dotum', '돋움'; line-height:22px; border-left:1px solid #bbbbbb;}
+.viewtable th {font-size: 18px; color: #444444; border-bottom:#bbbbbb solid 1px; background-color:#e0f2fe;font-family: 'Nanum Gothic','verdana','arial','dotum', '돋움';}
+
     </style>
+
+    <script>
+
+function FileUpload(obj,FileType,PopMsg){
+
+ $('#FormWindow').fadeIn('show');
+  document.FormWindow.location = '../../../File_UPload.asp?frmname='+ obj + '&FileType='+ FileType + '&PopMsg='+ PopMsg ,'Fileupload','width=620, height=200,left=200,top=100, status=no, scrollbars=yes, resizable=no,direction=no,location=no,menubar=no,toolbar=no,titlebar=no,fullscreen=no';
+ }
+
+
+ function FileUploadDel(obj){
+
+
+	 document.frm. obj .value = "";
+
+ }
+	</script>
 </head>
 <body>
     <!--#include virtual="/mobile/html/inc/gnb.asp"-->
@@ -282,7 +348,7 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
                             </label>
                             <div class="form-inline">
                                 <div class="form-group">
-                                    <input type="text" name="Reg_PayTotal" class="form-control" id="in_price" value="<%=Reg_PayTotal%>" readonly=""/>원
+                                    <input type="text" name="Reg_PayTotal" class="form-control" id="in_price" value="<%=Reg_PayTotal%>" readonly/>원
                                 </div>
                             </div>
                         </div>
@@ -295,7 +361,7 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
                                 <span>입금자명</span>
                             </label>
                             <div class="form-group">
-                                <input type="text" name="Reg_PayBankName" value="<%=Reg_PayBankName%>" class="form-control" id="in_deposit" required="required"/>
+                                <input type="text" name="Reg_PayBankName" value="<%=Reg_PayBankName%>" class="form-control" id="in_deposit" required/>
                             </div>
                             <p>
                                 * 참가자 성명과 입금자명이 다른 경우 반드시 사무국으로 연락해 주시기 바랍니다.<br/>
@@ -308,10 +374,10 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
                             </label>
                             <div>
                                 <label class="radio-inline">
-                                    <input type="radio" onclick="alert('세금계산서 발행 신청은 PC버전에서 진행해 주십시요.');return false;" name="Reg_PayTexV" id="in_receiptY" value="Y" required="required" <%if Reg_PayTexV = "Y" then%>checked="checked"<%end if%>> 발행
+                                    <input type="radio"  name="Reg_PayTexV" id="in_receiptY" value="Y" required <%if Reg_PayTexV = "Y" then%>checked="checked"<%end if%>> 발행
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="Reg_PayTexV" id="in_receiptN" value="N" required="required" <%if Reg_PayTexV = "N" then%>checked="checked"<%end if%>> 미발행
+                                    <input type="radio" name="Reg_PayTexV" id="in_receiptN" value="N" required <%if Reg_PayTexV = "N" then%>checked="checked"<%end if%>> 미발행
                                 </label>
                             </div>
                         </div>
@@ -320,17 +386,16 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
                                 <span>사업자등록증 사본</span>
                             </label>
                             <div class="form-group">
-                                <input type="file" name="upload_file" class="form-control" id="in_license" value="사업자등록증 선택하기" disabled="disabled"/>
-                            </div>
+                                <input name="Reg_PP_File1" type="text" class="form-control" id="in_license"  onClick="FileUpload('Reg_PP_File1','jpg|gif|pdf','JPG only. Max. 300KB');" value="사업자등록증 선택하기" readonly="readonly"/>
                             <p>
                                 * 계산서는 영수용으로 발행 가능하며, 행사 종료 후 일괄 처리 됩니다.<br/>
                                 * 계산서 발행을 위한 사업자등록증은 이미지파일(JPG 또는 PDF 형식, 500KB이하)로 첨부해 주시기 바랍니다.
                             </p>
-                        </div>
+                      </div>
                     </fieldset>
                 </article>
                 <div class="text-center next_btn">
-                    <input class="btn btn-primary btn-lg" type="submit" value="다음">
+                    <input class="btn btn-primary btn-lg" style="height: 35px;" type="submit" value="다음">
                 </div>
 
                 <input type="hidden" name="Reg_Email_Check">
@@ -422,7 +487,24 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
 			}
 		}
 	</script>
-
+</div>
 <!--#include virtual="/mobile/html/inc/footer.asp"-->
+<div id="FormWindow" style="position:fixed; left: 0px; top: 0px; width: 95%; height: 100%; z-index: 99; background-image: url(../../../images/popgb.png); display:none;" onclick="$('#FormWindow').fadeOut('show');">
+<br /><br /><br><br><br><br><br><br>
+            <table width="400px" border="0" cellspacing="0" cellpadding="0" align="center" style="border:#e0e0e0 solid 5px;">
+                    <tr>
+                                <td bgcolor="#FFFFFF" align="right">
+
+                                  <img src="../../../images/closeBtn.jpg" border="0" onclick="$('#FormWindow').fadeOut('show');" />
+                                </td>
+                     </tr>
+                  <tr>
+                        <td bgcolor="#FFFFFF">
+
+                        	<center><iframe name="FormWindow"  class="IframeWindow" src="" frameborder="0"  >Loading..</iframe></center>
+                        </td>
+                  </tr>
+              </table>
+</div>
 </body>
 </html>

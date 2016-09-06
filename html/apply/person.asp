@@ -185,7 +185,7 @@
     <br>
 
         </p>
-      <div class="check_btn text-center"><input class="btn btn-primary" type="button" onclick="window.close();" value="확인" style="width:30%; padding: 10px 16px;"></div>
+      <div class="check_btn text-center"><input class="btn btn-primary" type="button" onclick="window.close();" value="확인" style="width:100%; padding: 10px 16px;"></div>
     </section>
 
 

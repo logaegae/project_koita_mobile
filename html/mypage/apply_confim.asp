@@ -6,47 +6,47 @@ SearchText = request("SearchText")
 
 
 page_num = request("page_num")   '//기본페이지
-If Len(page_num) = 0 Then 
+If Len(page_num) = 0 Then
  page_num = 1
-End If 
-	
+End If
 
 
 
-					SQL = "SELECT * FROM RegData" 
-							
-					SQL = SQL & " where  Reg_Type = 'Y' "  
-							
+
+					SQL = "SELECT * FROM RegData"
+
+					SQL = SQL & " where  Reg_Type = 'Y' "
+
 					SQL = SQL & "AND([Reg_Email] like '%"& SearchText &"%'"&_
-																	
+
 																	"OR [Reg_Kname] like '%"& SearchText &"%'"&_
 																	"OR [Reg_Fname] like '%"& SearchText &"%'"&_
 																	"OR [Reg_Lname] like '%"& SearchText &"%'"&_
-																	
+
 																	"OR [Reg_Affiliation] like '%"& SearchText &"%'"&_
 																	"OR [Reg_AffiliationK] like '%"& SearchText &"%'"&_
-																	
+
 																	"OR [Reg_Position] like '%"& SearchText &"%'"&_
-																	"OR [Reg_PositionK] like '%"&SearchText&"%')" 
-						
-													
-										
-					SQL = SQL & " order by Reg_idx DESC" 
-							  
+																	"OR [Reg_PositionK] like '%"&SearchText&"%')"
+
+
+
+					SQL = SQL & " order by Reg_idx DESC"
+
 
 
  					Set rs = server.createObject("ADODB.Recordset")
 
-			
-			pagesize = 10                       
-			
+
+			pagesize = 10
+
 			Rs.CursorType = 1
 			Rs.cursorlocation = 3
 			rs.open sql,DBConn,1
-			totalRecordCount = Rs.Recordcount  
-			count = Rs.Recordcount         
-			Rs.pagesize = pagesize    
-			pagecount  = Rs.pagecount   
+			totalRecordCount = Rs.Recordcount
+			count = Rs.Recordcount
+			Rs.pagesize = pagesize
+			pagecount  = Rs.pagecount
 			totalpage = rs.pagecount
 
 
@@ -92,13 +92,16 @@ End If
 #applyconfirm .pagination>li>a, .pagination>li>span {
     position: relative;
     float: left;
-    padding: 6px 12px;
+    padding: 6px 8px;
     margin-left: -1px;
     line-height: 1.42857143;
     color: #6c66e1;
     text-decoration: none;
     background-color: #fff;
     border: 1px solid #6c66e1;
+}
+.head_name{
+float:right;
 }
 </style>
 </head>
@@ -118,13 +121,6 @@ End If
     <!-- 단락 -->
     <p></p>
 
-    <div class="first-tap">
-        <ul class="nav nav-pills nav-justified">
-            <li><a href="infomation.asp">등록내역</a></li>
-            <li class="active"><a href="apply_confim.asp">참가신청현황</a></li>
-            <li><a href="speech.asp">연사에게 질문하기</a></li>
-        </ul>
-    </div>
 
 
     <h4 class="strongElement"><span>기업정보</span></h4>
@@ -135,27 +131,27 @@ End If
       <span class="input-group-addon flaticon-search" id="basic-addon2" onclick="document.frm.submit();"></span>
     </div>
     </form>
-                        <% 
-								
+                        <%
 
-	
-								
-If Not Rs.EOF Then 
-       Rs.absolutepage = page_num      
-       temp_count = 1 
+
+
+
+If Not Rs.EOF Then
+       Rs.absolutepage = page_num
+       temp_count = 1
 	     list_no = page_num * pageSize - (pageSize - 1) '번호
-		 
-		 
-		 
+
+
+
     Do Until Rs.EOF Or temp_count =  pagesize
-   
-       
-				
+
+
+
 				Reg_idx =  DbOutput(Rs("Reg_idx"))
 				Reg_Wdate =  DbOutput(Rs("Reg_Wdate"))
 				Reg_Edate =  DbOutput(Rs("Reg_Edate"))
 				Reg_Type =  DbOutput(Rs("Reg_Type"))
-				
+
 				ViewSN =  DbOutput(Rs("ViewSN"))
 				Reg_PType =  DbOutput(Rs("Reg_PType"))
 				Reg_Title =  DbOutput(Rs("Reg_Title"))
@@ -228,13 +224,13 @@ If Not Rs.EOF Then
 %>
     <div class="panel panel-primary">
       <div class="panel-heading">
-          <span class="num">No.</span> <span><%= totalRecordCount - list_no + 1%></span>
+          <span class="num">No.</span> <span><%= totalRecordCount - list_no + 1%></span><span class="head_name"><%=Reg_AffiliationK%></span> <br />
      </div>
       <div class="panel-body">
           <p>
             <span class="definition">회사명 :</span>
             <span><%=Reg_AffiliationK%></span> <br />
-            <span class="definition">아이디(이메일) :</span>
+            <span class="definition">이메일 :</span>
             <span><%=Reg_Email%></span> <br />
             <span class="definition">직급 :</span>
             <span><%=Reg_PositionK%></span> <br />
@@ -244,37 +240,37 @@ If Not Rs.EOF Then
       </div>
     </div>
                         <%
-	
+
 	 list_count = list_count + 1
- 
+
          temp_count = temp_count +1
 		 	list_no = list_no + 1
      Rs.movenext
- Loop 
+ Loop
 
-end if 
+end if
 
- %>    
+ %>
 
 
 
     <div class="text-center">
         <nav>
           <ul class="pagination pagination-sm">
-            
-<% 
+
+<%
 		 blockpage = Int((page_num-1)/pagesize)*pagesize +1
 
-     If blockpage =1 Then 
+     If blockpage =1 Then
 	  %>
                             <%
      Else
       preblockpage = blockpage - 9
       response.write "<li><a href='?page="& page &"&page_num=" & prevblockpage &"&board_id="& board_id &"&PageName=" & PageName &"&PageSName=" & PageSName &"&LoadPage=" & LoadPage &"' aria-label='Previous'><span aria-hidden='true'>&laquo;</span></a></li>"
-     End If 
-     j=1     
-     Do Until j >10 Or blockpage > pagecount          
-      If blockpage = CInt(page_num) Then 
+     End If
+     j=1
+     Do Until j >10 Or blockpage > pagecount
+      If blockpage = CInt(page_num) Then
       %>
                             <li class="active"><a href="?page=<%=page%>&page_num=<%=blockpage %>&board_id=<%=board_id%>&PageName=<%=PageName %>&PageSName=<%=PageSName%>&LoadPage=<%=LoadPage%>"><%=blockpage %></a></li>
                             <%
@@ -282,20 +278,20 @@ end if
 		%>
                             <li><a href="?page=<%=page%>&page_num=<%=blockpage %>&board_id=<%=board_id%>&PageName=<%=PageName %>&PageSName=<%=PageSName%>&LoadPage=<%=LoadPage%>"><%=blockpage %></a></li>
                             <%
-      End If 
+      End If
       j = j + 1
       blockpage = blockpage +1
 
      Loop
      %>
                           <%
-     If blockpage <= pagecount Then 
+     If blockpage <= pagecount Then
       response.write "<li><a href='?page="&page &"&page_num=" & blockpage &"&board_id="& board_id & "&LoadPage=" & LoadPage &"&PageName=" & PageName &"&PageSName=" & PageSName & "' aria-label='Next'><span aria-hidden='true'>&raquo;</span></a></li>"
-     End If 
-	 
-				
+     End If
+
+
 DBConn.close
-			
+
 set rs = nothing
 set dbconn = nothing
 
@@ -303,13 +299,20 @@ set dbconn = nothing
 
 
 				 %>
-            
-            
-            
-            
-            
+
+
+
+
+
           </ul>
         </nav>
+    </div>
+    <div class="first-tap">
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="infomation.asp">등록내역</a></li>
+            <li class="active"><a href="apply_confim.asp">참가신청현황</a></li>
+            <li><a href="speech.asp">연사에게 질문하기</a></li>
+        </ul>
     </div>
 
 </div>

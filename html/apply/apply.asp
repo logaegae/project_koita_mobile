@@ -73,15 +73,6 @@
 
     <h2 class="headding"><span>참가등록</span></h2>
 
-    <!-- 단락 -->
-    <div class="first-tap">
-        <ul class="nav nav-pills nav-justified">
-            <li><a href="/mobile/html/apply/apply_info.asp">참가신청 안내</a></li>
-            <li class="active"><a href="/mobile/html/apply/apply.asp">참가신청</a></li>
-            <li><a href="/mobile/html/mypage/apply_confirm.asp">참가신청 확인</a></li>
-        </ul>
-    </div>
-
     <h3 class="subject"><span>기업회원 확인</span></h3>
 
     <section>
@@ -100,15 +91,44 @@
                     </div>
                 </fieldset>
                 <div class="text-center">
-                    <a class="btn btn-info btn-lg" href="/mobile/html/apply/non-memnber.asp" onclick="AlertIt()" id="notMember">비회원으로 등록하기</a>
+                    <a class="btn btn-info btn-lg" href="/mobile/html/apply/non-memnber.asp" id="notMember">비회원으로 등록하기</a>
                 </div>
             </article>
         </form>
     </section>
 
 
+        <!-- 단락 -->
+        <div class="first-tap">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/mobile/html/apply/apply_info.asp">참가신청 안내</a></li>
+                <li class="active"><a href="/mobile/html/apply/apply.asp">참가신청</a></li>
+                <li><a href="/mobile/html/mypage/apply_confim.asp">참가신청 확인</a></li>
+            </ul>
+        </div>
+
 
 </div>
+
 <!--#include virtual="/mobile/html/inc/footer.asp"-->
+
+
+<div id="FormWindow" style="position:fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 99; background-image: url(../../../images/popgb.png); display:none;" onclick="$('#FormWindow').fadeOut('show');">
+<br /><br />
+            <table width="400px" border="0" cellspacing="0" cellpadding="0" align="center" style="border:#e0e0e0 solid 5px;">
+                    <tr>
+                                <td bgcolor="#FFFFFF" align="right">
+
+                                  <img src="../images/closeBtn.jpg" border="0" onclick="$('#FormWindow').fadeOut('show');" />
+                                </td>
+                     </tr>
+                  <tr>
+                        <td bgcolor="#FFFFFF">
+
+                        	<center><iframe name="FormWindow"  class="IframeWindow" src="" frameborder="0"  >Loading..</iframe></center>
+                        </td>
+                  </tr>
+              </table>
+</div>
 </body>
 </html>

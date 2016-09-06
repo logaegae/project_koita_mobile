@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>koita2013.html</title>
     <!--#include virtual="/mobile/html/inc/head.asp"-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="/mobile/lib/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/mobile/lib/font/flaticon.css" />
-    <link rel="stylesheet" href="/mobile/lib/css/common.css" />
+
+    <style>
+    #koita2013 .strongElement{margin-top: 20px;}
+    </style>
 
 </head>
 <body>
@@ -20,14 +19,6 @@
 
     <h2 class="headding"><span>프로그램</span></h2>
 
-
-    <div class="first-tap">
-        <ul class="nav nav-pills nav-justified">
-            <li><a href="/mobile/html/program/2016_program.asp">2016 Program</a></li>
-            <li><a href="/mobile/html/program/2016_speaker.asp">2016 Speaker</a></li>
-            <li class="active"><a href="/mobile/html/program/koita2014.asp">지난 행사</a></li>
-        </ul>
-    </div>
     <h3 class="subject"><span>지난행사</span></h3>
     <div class="sub-tap">
         <ul class="nav nav-tabs">
@@ -35,12 +26,6 @@
             <li class="active"><a href="/mobile/html/program/koita2013.asp"><strong>KOITA 글로벌 포럼 2013</strong></a></li>
         </ul>
     </div>
-
-        <div class="descriptHeadding">
-            <h4 class="strongElementblue"><span>KOITA 글로벌 포럼 2013</span></h4>
-            <p><span><strong>2013년 11월 14일(목) 10:00~17:30 / <br />JW 메이리어트 호텔 서울 5층 그랜드볼룸</strong></span></p>
-            <p><span><strong>New Business Models in the Creative Economy</strong></span></p>
-        </div>
 
     <h4 class="strongElement"><span>프로그램</span></h4>
 
@@ -187,6 +172,14 @@
   </div>
 
 
+
+      <div class="first-tap">
+          <ul class="nav nav-pills nav-justified">
+              <li><a href="/mobile/html/program/2016_program.asp">2016 Program</a></li>
+              <li><a href="/mobile/html/program/2016_speaker.asp">2016 Speaker</a></li>
+              <li class="active"><a href="/mobile/html/program/koita2014.asp">지난 행사</a></li>
+          </ul>
+      </div>
 
 </div>
 

@@ -81,7 +81,7 @@ totalpage = rs.pagecount
 
         <div class="input-group-btn select_tg">
 
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Subject <span class="caret"></span></button>
+	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Subject<span class="caret"></span></button>
 
 	        <ul class="dropdown-menu" role="menu">
 	          <li><a href="#">Subject</a></li>

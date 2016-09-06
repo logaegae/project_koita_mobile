@@ -78,7 +78,7 @@
                             <input type="password" name="Reg_PW" class="form-control" id="userPassword" required="required" />
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-block">로그인</button>
+                    <button type="submit" class="btn btn-primary btn-block" style="height:40px;">로그인</button>
                 </fieldset>
             </form>
 

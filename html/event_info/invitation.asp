@@ -29,13 +29,6 @@
         <!--제목-->
         <h2 class="headding"><span>행사안내</span></h2>
 
-        <div class="first-tap">
-            <ul class="nav nav-pills nav-justified">
-                <li class="active"><a href="/mobile/html/event_info/invitation.asp">초청의 글</a></li>
-                <li><a href="/mobile/html/event_info/event_info.asp">행사개요</a></li>
-                <li><a href="/mobile/html/event_info/location.asp">위치 및 교통편</a></li>
-            </ul>
-        </div>
 
         <h4 class="strongElement"><span>초청의 글</span></h4>
 
@@ -53,6 +46,14 @@
                 바쁘시더라도 부디 참석하시어 자리를 빛내주시기 바랍니다.
             </p>
         </div>
+
+                <div class="first-tap">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active"><a href="/mobile/html/event_info/invitation.asp">초청의 글</a></li>
+                        <li><a href="/mobile/html/event_info/event_info.asp">행사개요</a></li>
+                        <li><a href="/mobile/html/event_info/location.asp">위치 및 교통편</a></li>
+                    </ul>
+                </div>
     </div>
 <!--#include virtual="/mobile/html/inc/footer.asp"-->
 
