@@ -17,7 +17,7 @@
     #speaker .speaker_box ul li.speaker_job {font-size: 14px; color:#555;}
     #speaker .speaker_box ul li strong,span{display: inline-block;}
     #speaker .speaker_box ul li.speaker_career {margin-bottom: 5px;}
-    #speaker .speaker_box ul li.speaker_career span{font-size: 16px; margin: 5px 0; color: #333; letter-spacing: -1px;}
+    #speaker .speaker_box ul li.speaker_career span{font-size: 16px; margin: 3px 0 0; color: #333; letter-spacing: -1px;}
     #speaker .speaker_box ul li.speaker_career .caption{font-size: 10px;color: #999;}
     #speaker .speaker_box ul li.speaker_job .caption{font-size: 10px;}
     #speaker .speaker_career_ct{width: 100%; margin-top: 10px;}
@@ -25,7 +25,7 @@
     #speaker .speaker_box ul li.company .companylogo_img_box{min-width: 200px; max-width:300px;width:100%; margin: 10px auto; vertical-align: middle;}
     #speaker .speaker_box ul li.company .companylogo_img_box img{width: 100%;}
     #speaker .company .speaker_career_ct p{text-align: justify;}
-    #speaker .speaker_box ul li.iconfont{margin-bottom:20px;}
+    #speaker .speaker_box ul li.iconfont{margin-bottom:40px;}
 
     #speaker .cpn {display: none;}
     #speaker .speaker_box i.flaticon-eye::before{margin:0; font-size: 14px; vertical-align: middle;}
@@ -82,7 +82,7 @@
 
                           </li>
                           <li class="iconfont">
-                            <a href="javascrpit:void(0)" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
+                            <a href="" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
                             <a href="/mobile/html/mypage/speech.asp" class="btn btn-primary btn-sm"><i class="flaticon-question-speech-bubble"></i> 질문하기</a>
                           </li>
                       </ul>
@@ -126,7 +126,7 @@
 
                         </li>
                         <li class="iconfont">
-                          <a href="javascrpit:void(0)" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
+                          <a href="" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
                           <a href="/mobile/html/mypage/speech.asp" class="btn btn-primary btn-sm"><i class="flaticon-question-speech-bubble"></i> 질문하기</a>
                         </li>
                       </ul>
@@ -169,7 +169,7 @@
 
                         </li>
                         <li class="iconfont">
-                          <a href="javascrpit:void(0)" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
+                          <a href="" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
                           <a href="/mobile/html/mypage/speech.asp" class="btn btn-primary btn-sm"><i class="flaticon-question-speech-bubble"></i> 질문하기</a>
                         </li>
                       </ul>
@@ -213,7 +213,7 @@
 
                         </li>
                         <li class="iconfont">
-                          <a href="javascrpit:void(0)" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
+                          <a href="" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
                           <a href="/mobile/html/mypage/speech.asp" class="btn btn-primary btn-sm"><i class="flaticon-question-speech-bubble"></i> 질문하기</a>
                         </li>
                       </ul>
@@ -256,7 +256,7 @@
 
                         </li>
                         <li class="iconfont">
-                          <a href="javascrpit:void(0)" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
+                          <a href="" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
                           <a href="/mobile/html/mypage/speech.asp" class="btn btn-primary btn-sm"><i class="flaticon-question-speech-bubble"></i> 질문하기</a>
                         </li>
                       </ul>
@@ -298,7 +298,7 @@
 
                         </li>
                         <li class="iconfont">
-                          <a href="javascrpit:void(0)" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
+                          <a href="" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
                           <a href="/mobile/html/mypage/speech.asp" class="btn btn-primary btn-sm"><i class="flaticon-question-speech-bubble"></i> 질문하기</a>
                         </li>
                       </ul>
@@ -341,7 +341,7 @@
 
                         </li>
                         <li class="iconfont">
-                          <a href="javascrpit:void(0)" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
+                          <a href="" onClick="alert_window()" class="btn btn-primary btn-sm"><i class="flaticon-eye"></i> 발표자료 보기</a>
                           <a href="/mobile/html/mypage/speech.asp" class="btn btn-primary btn-sm"><i class="flaticon-question-speech-bubble"></i> 질문하기</a>
                         </li>
                       </ul>

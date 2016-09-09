@@ -33,23 +33,24 @@
             <li class="program_time black_box"><strong>10:00~10:45</strong></li>
             <li class="chapter"><strong>등록</strong></li>
         </ul>
-        <ul class="gray_box">
-            <li class="program_time break_gray">
-              <strong>10:45~11:00</strong>
-            </li>
+        <ul class="gray_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+            <li class="program_time black_box"><strong>10:45~11:00</strong></li>
             <li class="chapter"><strong>개회식</strong></li>
         </ul>
         <ul class="gray_border">
             <li>
+                <!-- <div class="program_time break_gray">
+                  <strong>10:45~11:00</strong>
+                </div> -->
                 <div>
                     <strong class="subtitle_01 first_li">[개회사]</strong>
                     <span>
                       <!-- <a href="//www.koita.or.kr/company/introduce.aspx" target="_blank"> -->
-                          <strong class="name">박용현</strong>
-                          <!-- <i class="flaticon-link"></i></a> -->
+                          <strong class="name" style="display:inline-block;">박용현</strong>
+                          <!-- </a> -->
 
                     </span>
-                    <span class="script_sub">한국산업기술진흥협회(KOITA), 회장</span>
+                    <span class="script_sub" style="display:inline-block;">한국산업기술진흥협회(KOITA) 회장</span>
                 </div>
             </li>
           </ul>
@@ -58,13 +59,13 @@
                 <div>
                     <strong class="subtitle_01 first_li">[축    사]</strong>
                     <span>
-                      <a href="http://www.msip.go.kr/web/msipContents/contents.do?mId=ODU=" target="_blank"><strong class="name">최양희<i class="flaticon-link"></i></strong></a>
+                      <strong class="name" style="display:inline-block;">최양희</strong>
                     </span>
-                    <span class="script_sub">미래창조과학부 장관</span>
+                    <span class="script_sub" style="display:inline-block;">미래창조과학부 장관</span><br/>
                     <span>
-                      <a href="http://etc.mk.co.kr/company/intro/sub01_3.php" target="_blank"><strong class="name">장대환<i class="flaticon-link"></i></strong></a>
+                      <strong class="name" style="display:inline-block;">장대환</strong>
                     </span>
-                    <span class="script_sub">매경미디어그룹 회장</span>
+                    <span class="script_sub" style="display:inline-block;">매경미디어그룹 회장</span>
                 </div>
             </li>
           </ul>
@@ -76,22 +77,22 @@
                 <div>
                   <strong class="subtitle_01 first_li font_blue">[기조연설]</strong>
                   <span>
-                    <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Martin G. Curley<i class="flaticon-link"></i></strong></a>
+                    <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Martin G. Curley</strong></a>
                   </span>
                   <span class="script_sub">국립아일랜드대학교 교수(前 Intel 부사장, 유럽법인 대표)</span>
                 </div>
             </li>
             <li>
 
-              <a href="javascrpit:void(0)" onClick="alert_window()"><i class="flaticon-eye"></i> 발표자료 보기</a>
-              <a href="/mobile/html/mypage/speech.asp"><i class="flaticon-question-speech-bubble"></i>연사에게 질문하기</a>
+              <a href="" onClick="alert_window()" style="color:#ff8b00">발표자료 보기</a>
+              <a href="/mobile/html/mypage/speech.asp">연사에게 질문하기</a>
             </li>
 
           </ul>
-          <ul class="gray_box">
-              <li class="program_time break_gray">
+          <ul class="gray_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+              <!-- <li class="program_time break_gray">
                 <strong>11:50~13:00</strong>
-              </li>
+              </li> -->
               <li class="chapter"><strong>중식 및 네트워킹</strong></li>
           </ul>
           <ul>
@@ -102,36 +103,39 @@
                 <div>
                   <strong class="subtitle_01 first_li font_blue">[기조연설]</strong>
                   <span>
-                    <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Sanjeev Gandhi<i class="flaticon-link"></i></strong></a>
+                    <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Sanjeev Gandhi</strong></a>
                   </span>
                   <span class="script_sub">바스프(BASF) 아시아 지역 총괄 대표</span>
                 </div>
             </li>
             <li>
-              <a href="javascrpit:void(0)" onClick="alert_window()"><i class="flaticon-eye"></i> 발표자료 보기</a>
-              <a href="/mobile/html/mypage/speech.asp"><i class="flaticon-question-speech-bubble"></i>연사에게 질문하기</a>
+              <a href="" onClick="alert_window()" style="color:#ff8b00">발표자료 보기</a>
+              <a href="/mobile/html/mypage/speech.asp">연사에게 질문하기</a>
             </li>
 
           </ul>
-          <ul class="orange_box">
-              <li class="program_time chapter1_orange">
+          <ul class="orange_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+              <!-- <li class="program_time chapter1_orange">
                 <strong>13:50~14:30</strong>
-              </li>
+              </li> -->
               <li class="chapter"><strong>Innovation and Change I</strong></li>
           </ul>
           <ul class="orange_border">
+            <li class="program_time orange_box">
+              <strong>13:50~14:30</strong>
+            </li>
             <li>
                   <div>
                     <strong class="subtitle_01 first_li font_orange">[주제발표]</strong>
                     <span>
-                      <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Andre Nothomb<i class="flaticon-link"></i></strong></a>
+                      <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Andre Nothomb</strong></a>
                     </span>
                     <span class="script_sub">솔베이(SOLVAY) 아시아 태평양 지역본부 대표</span>
                   </div>
               </li>
               <li>
-                <a href="javascrpit:void(0)" onClick="alert_window()"><i class="flaticon-eye"></i> 발표자료 보기</a>
-                <a href="/mobile/html/mypage/speech.asp"><i class="flaticon-question-speech-bubble"></i>연사에게 질문하기</a>
+                <a href="" onClick="alert_window()" style="color:#ff8b00">발표자료 보기</a>
+                <a href="/mobile/html/mypage/speech.asp">연사에게 질문하기</a>
               </li>
             </ul>
             <ul class="gray_dash">
@@ -142,20 +146,20 @@
                     <div>
                       <strong class="subtitle_01 first_li font_orange">[주제발표]</strong>
                       <span>
-                        <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Naoto Yanagihara<i class="flaticon-link"></i></strong></a>
+                        <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Naoto Yanagihara</strong></a>
                       </span>
                       <span class="script_sub">후지필름(FUJIFILM) 부사장</span>
                     </div>
                 </li>
                 <li>
-                  <a href="javascrpit:void(0)" onClick="alert_window()"><i class="flaticon-eye"></i> 발표자료 보기</a>
-                  <a href="/mobile/html/mypage/speech.asp"><i class="flaticon-question-speech-bubble"></i>연사에게 질문하기</a>
+                  <a href="" onClick="alert_window()" style="color:#ff8b00">발표자료 보기</a>
+                  <a href="/mobile/html/mypage/speech.asp">연사에게 질문하기</a>
                 </li>
             </ul>
-            <ul class="gray_box">
-                <li class="program_time break_gray">
+            <ul class="gray_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+                <!-- <li class="program_time break_gray">
                   <strong>15:10~15:30</strong>
-                </li>
+                </li> -->
                 <li class="chapter"><strong>휴식 및 네트워킹</strong></li>
             </ul>
             <ul>
@@ -166,35 +170,38 @@
                     <div>
                       <strong class="subtitle_01 first_li font_blue">[기조연설]</strong>
                       <span>
-                        <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Jim Rusk<i class="flaticon-link"></i></strong></a>
+                        <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Jim Rusk</strong></a>
                       </span>
                       <span class="script_sub">지멘스(수석부사장 겸 CTO(PLMSoftware))</span>
                     </div>
                 </li>
                 <li>
-                  <a href="javascrpit:void(0)" onClick="alert_window()"><i class="flaticon-eye"></i> 발표자료 보기</a>
-                  <a href="/mobile/html/mypage/speech.asp"><i class="flaticon-question-speech-bubble"></i>연사에게 질문하기</a>
+                  <a href="" onClick="alert_window()" style="color:#ff8b00">발표자료 보기</a>
+                  <a href="/mobile/html/mypage/speech.asp">연사에게 질문하기</a>
                 </li>
             </ul>
-            <ul class="skyblue_box">
-                <li class="program_time chapter2_skyblue">
+            <ul class="skyblue_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+                <!-- <li class="program_time chapter2_skyblue">
                   <strong>16:20~17:00</strong>
-                </li>
+                </li> -->
                 <li class="chapter"><strong>Innovation and Change II</strong></li>
             </ul>
             <ul class="skyblue_border">
+              <li class="program_time skyblue_box">
+                <strong>16:20~17:00</strong>
+              </li>
                 <li>
                     <div>
                       <strong class="subtitle_01 first_li font_skyblue">[주제발표]</strong>
                       <span>
-                        <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Frank Schaefers<i class="flaticon-link"></i></strong></a>
+                        <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Frank Schaefers</strong></a>
                       </span>
                       <span class="script_sub">Robert Bosch Korea 대표이사</span>
                     </div>
                 </li>
                 <li>
-                  <a href="javascrpit:void(0)" onClick="alert_window()"><i class="flaticon-eye"></i> 발표자료 보기</a>
-                  <a href="/mobile/html/mypage/speech.asp"><i class="flaticon-question-speech-bubble"></i>연사에게 질문하기</a>
+                  <a href="" onClick="alert_window()" style="color:#ff8b00">발표자료 보기</a>
+                  <a href="/mobile/html/mypage/speech.asp">연사에게 질문하기</a>
                 </li>
               </ul>
               <ul class="gray_dash">
@@ -205,18 +212,18 @@
                       <div>
                         <strong class="subtitle_01 first_li font_skyblue">[주제발표]</strong>
                         <span>
-                          <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Semyon Kogan<i class="flaticon-link"></i></strong></a>
+                          <a href="/mobile/html/program/2016_speaker.asp" target="_blank"><strong class="name">Semyon Kogan</strong></a>
                         </span>
                         <span class="script_sub">GEN5 Group 대표이사</span>
                       </div>
                   </li>
                   <li>
-                    <a href="javascrpit:void(0)" onClick="alert_window()"><i class="flaticon-eye"></i> 발표자료 보기</a>
-                    <a href="/mobile/html/mypage/speech.asp"><i class="flaticon-question-speech-bubble"></i>연사에게 질문하기</a>
+                    <a href="" onClick="alert_window()" style="color:#ff8b00">발표자료 보기</a>
+                    <a href="/mobile/html/mypage/speech.asp">연사에게 질문하기</a>
                   </li>
                 </ul>
-                <ul class="gray_box">
-                    <li class="program_time break_gray">
+                <ul class="gray_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+                    <li class="program_time black_box">
                       <strong>17:40</strong>
                     </li>
                     <li class="chapter"><strong>폐회식</strong></li>
@@ -226,9 +233,9 @@
                         <div>
                           <strong class="subtitle_01 first_li">[폐회사]</strong>
                           <span>
-                            <strong class="name">김이환</strong>
+                            <strong class="name" style="display:inline-block;">김이환</strong>
                           </span>
-                          <span class="script_sub">한국산업기술진흥협회 부회장</span>
+                          <span class="script_sub" style="display:inline-block;">한국산업기술진흥협회 부회장</span>
                         </div>
                     </li>
                   </ul>

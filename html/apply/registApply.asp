@@ -120,7 +120,7 @@ if Reg_Email <> "" then
 				if session("CompanyInfo_Number") <> "" then 
 				
 				
-							sql2 = "SELECT * FROM  RegData where Reg_PType='"& CompanyInfo_Number &"'"
+							sql2 = "SELECT * FROM  RegData where Reg_Type = 'Y' and Reg_PType='"& CompanyInfo_Number &"'"
 													Set rs2 = server.createObject("ADODB.Recordset")
 													rs2.open sql2,DBConn,1
 													
@@ -131,7 +131,7 @@ if Reg_Email <> "" then
 																	if Conpany_Count => 2 then 
 																	
 																			
-																		response.write "<script>alert('2인까지 등록 가능합니다.\r3인 이상 등록을 원하시거나 등록정보 수정이 필요하신 분은 사무국으로 문의 주시기 바랍니다. ');history.back();</script>"	
+																		response.write "<script>alert('이미 2인이상 등록을 완료한 회원사입니다. 추가 신청을 원하실 경우 사무국으로 연락해 주시기 바랍니다.');history.back();</script>"	
 																		
 																	
 																	else 

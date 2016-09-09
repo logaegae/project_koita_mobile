@@ -32,7 +32,7 @@
   </div>
   <div class="program_table">
 
-      <ul>
+      <ul style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
           <li class="program_time black_box"><strong>10:00~10:30</strong></li>
           <li class="chapter"><strong>등록</strong></li>
       </ul>
@@ -80,17 +80,17 @@
               </div>
           </li>
         </ul>
-        <ul class="gray_box">
-            <li class="program_time break_gray">
+        <ul class="gray_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+            <li class="program_time gray_box">
               <strong>12:00~13:00</strong>
             </li>
             <li class="chapter"><strong>오찬</strong></li>
         </ul>
-        <ul class="orange_box">
-            <li class="program_time chapter1_orange">
+        <ul class="orange_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+            <li class="program_time orange_box">
               <strong>13:00~15:00</strong>
             </li>
-            <li class="chapter"><strong>세션Ⅰ [주제: Creativity]</strong></li>
+            <li class="chapter"><strong>세션Ⅰ</strong></li>
         </ul>
         <ul class="orange_border">
             <li>
@@ -117,17 +117,17 @@
                 </div>
             </li>
           </ul>
-          <ul class="gray_box">
-              <li class="program_time break_gray">
+          <ul class="gray_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+              <li class="program_time gray_box">
                 <strong>15:00~15:30</strong>
               </li>
               <li class="chapter"><strong>Coffee Break</strong></li>
           </ul>
-          <ul class="skyblue_box">
-              <li class="program_time chapter2_skyblue">
+          <ul class="skyblue_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+              <li class="program_time skyblue_box">
                 <strong>15:30~17:30</strong>
               </li>
-              <li class="chapter"><strong>세션Ⅱ [주제: Collaboration]</strong></li>
+              <li class="chapter"><strong>세션Ⅱ</strong></li>
           </ul>
           <ul class="skyblue_border">
               <li>

@@ -21,7 +21,7 @@ CompanyInfo_Number = request("CompanyInfo_Number")
 									
 									
 									
-									sql2 = "SELECT * FROM  RegData where Reg_PType='"& CompanyInfo_Number &"'"
+									sql2 = "SELECT * FROM  RegData where Reg_Type = 'Y' and Reg_PType='"& CompanyInfo_Number &"'"
 										Set rs2 = server.createObject("ADODB.Recordset")
 										rs2.open sql2,DBConn,1
 										
@@ -29,7 +29,20 @@ CompanyInfo_Number = request("CompanyInfo_Number")
 											 Conpany_Count = rs2.RECORDCOUNT
 											 
 											 
-														if Conpany_Count => 2 then 
+														if Conpany_Count = 1 then 
+														
+														
+														
+														session("CompanyInfo_Number") = rs("CompanyInfo_Number")
+																session("CompanyInfo_Name")  = CompanyInfo_Name
+														
+																 response.write "<script>alert('이미 등록을 완료한 회원사입니다. 추가 1인만 신청이 가능합니다.');document.location.href = 'non-memnber.asp';</script>"	
+														
+																
+															
+															
+														
+														else if Conpany_Count => 2 then 
 														
 																
 															response.write "<script>alert('1개사 2인까지 등록 가능합니다. 3인 이상 등록을 원하시거나 등록정보 수정이 필요하신 분은 사무국으로 문의 주시기 바랍니다. ');history.back();</script>"	
@@ -41,11 +54,12 @@ CompanyInfo_Number = request("CompanyInfo_Number")
 														session("CompanyInfo_Number") = rs("CompanyInfo_Number")
 																session("CompanyInfo_Name")  = CompanyInfo_Name
 														
-																 response.write "<script>alert('회원사입니다. 1개사 2인까지 등록가능하며, 3인이상 등록하실 경우 사무국으로 문의주시기 바랍니다.');document.location.href = 'non-memnber.asp';</script>"	
+																 response.write "<script>alert('회원사 인증되었습니다.');document.location.href = 'non-memnber.asp';</script>"	
 																
 														
 														
-														end if  		
+														end if  
+													end if		
 											 
 											 
 											 

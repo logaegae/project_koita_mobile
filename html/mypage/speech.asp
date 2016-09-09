@@ -64,7 +64,7 @@ ul,li{
 
 
     <!-- 제목 -->
-    <h2 class="headding"><span>마이페이지</span></h2>
+    <h2 class="headding"><span>연사에게 질문하기</span></h2>
 
 
 
@@ -76,21 +76,21 @@ ul,li{
               <span class="person select_con">Sanjeev Gandhi | 바스프(BASF)<br /> 아시아 지역 총괄 대표</a></span> <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu">
-            <li><a>Martin G. Curley | Maynooth University<br />(Ireland)교수 前 Intel 부사장(유럽법인 대표)</a></li>
+            <li><a>Martin G. Curley | Maynooth University 교수</a></li>
             <li><a>Sanjeev Gandhi | 바스프(BASF)<br /> 아시아 지역 총괄 대표</a></li>
             <li><a>Jim Rusk | 지멘스(SIEMENS)<br /> 수석부사장 겸 CTO</a></li>
             <li><a>Frank Schaefers | 보쉬(Bosch)<br /> 한국법인 대표이사</a></li>
-            <li><a>Andre Nothomb | 솔베이(SOLVAY)<br /> 아시아 태평양 지역본부 대표 겸<br /> 솔베이 코리아 대표이사</a></li>
+            <li><a>Andre Nothomb | 솔베이(SOLVAY)<br /> 아태지역본부 대표</a></li>
             <li><a>Naoto Yanagihara | 후지필름(FUJIFILM)<br /> 혁신전략 부사장</a></li>
             <li><a>Semyon Kogan | GEN5 GROUP 대표이사</a></li>
           </ul>
 
           <select name="Qna_SPK" id="Qna_SPK" style="width:100%" class="ref">
-              <option value="Martin G. Curley" <%if Qna_SPK = "Martin G. Curley" then %> selected <% end if %>>Martin G. Curley | Maynooth University(Ireland)교수 前 Intel 부사장(유럽법인 대표)</option>
+              <option value="Martin G. Curley" <%if Qna_SPK = "Martin G. Curley" then %> selected <% end if %>>Martin G. Curley | Maynooth University 교수</option>
               <option value="Sanjeev Gandhi" <%if Qna_SPK = "Sanjeev Gandhi" then %> selected <% end if %>>Sanjeev Gandhi | 바스프(BASF) 아시아 지역 총괄 대표</option>
               <option value="Jim Rusk" <%if Qna_SPK = "Jim Rusk" then %> selected <% end if %>>Jim Rusk | 지멘스(SIEMENS) 수석부사장 겸 CTO</option>
               <option value="Frank Schaefers" <%if Qna_SPK = "Frank Schaefers" then %> selected <% end if %>>Frank Schaefers | 보쉬(Bosch) 한국법인 대표이사</option>
-              <option value="Andre Nothomb" <%if Qna_SPK = "Andre Nothomb" then %> selected <% end if %>>Andre Nothomb | 솔베이(SOLVAY) 아시아 태평양 지역본부 대표 겸 솔베이 코리아 대표이사</option>
+              <option value="Andre Nothomb" <%if Qna_SPK = "Andre Nothomb" then %> selected <% end if %>>Andre Nothomb | 솔베이(SOLVAY) 아태지역본부 대표</option>
               <option value="Naoto Yanagihara" <%if Qna_SPK = "Naoto Yanagihara" then %> selected <% end if %>>Naoto Yanagihara | 후지필름(FUJIFILM) 혁신전략 부사장</option>
               <option value="Semyon Kogan" <%if Qna_SPK = "Semyon Kogan" then %> selected <% end if %>>Semyon Kogan | GEN5 GROUP 대표이사</option>
         </select>
@@ -170,7 +170,7 @@ end if
     <div class="first-tap">
         <ul class="nav nav-pills nav-justified">
             <li><a href="infomation.asp">등록내역</a></li>
-            <li><a href="apply_confim.asp">참가신청현황</a></li>
+            <li><a href="apply_confim.asp">참가자현황</a></li>
             <li class="active"><a href="speech.asp">연사에게 질문하기</a></li>
         </ul>
     </div>

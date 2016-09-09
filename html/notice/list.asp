@@ -145,7 +145,7 @@ If Not Rs.EOF Then
 
 
         <li class="list-group-item">
-            <a href="view.asp?board_idx=<%=rs("board_idx")%>&SearchText=<%=SearchText%>&Board_id=<%=Board_id%>"><strong class="list-group-item-heading">KOITA 글로벌 포럼 2016 신청등록안내</strong></a>
+            <a href="view.asp?board_idx=<%=rs("board_idx")%>&SearchText=<%=SearchText%>&Board_id=<%=Board_id%>"><strong class="list-group-item-heading"><%=board_title%></strong></a>
             <p  class="info ">
                 <span class="definition">No.</span><span><%= totalRecordCount - list_no + 1%></span>
                 <span class="definition">Date.</span><span><%=left(rs("board_date"),10)%></span>

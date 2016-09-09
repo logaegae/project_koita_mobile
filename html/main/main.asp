@@ -642,7 +642,7 @@
 <body>
 <!--#include virtual="/mobile/html/inc/gnb.asp"-->
 
-<div class="bg container-fluid">
+<div class="container-fluid bg">
     <section class="main">
 
         <h1>KOITA Global Forum 2016</h1>
@@ -657,7 +657,7 @@
         </div> -->
         <div class="text_box">
             <p>미래를 향한 도전 - 변화와 혁신<br/>
-                <sub style="letter-spacing:-0.7px;">Challenge for the next 25 years - Innovation and change</sub><br/>
+                <sub style="letter-spacing:-0.7px;">Challenge for the next 25 years - Innovation and Change</sub><br/>
             </p>
             <p>
                 <time datetime="2016-10-27">2016년 10월 27일<small>(목)</small></time> 10:00 ~ 18:00<br/>
@@ -694,7 +694,7 @@
                     <span class="name_blue"><i>Martin G. Curley</i></span><br/>
                     Maynooth University(Ireland)교수<br/>
                     前 Intel 부사장 (유럽법인 대표)<br/>
-                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">연사 바로가기<i class="flaticon-arrows-3"></i></a>
+                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">상세이력 보기<i class="flaticon-arrows-3"></i></a>
                 </p>
             </div>
         </div>
@@ -720,7 +720,7 @@
                     <span class="name_blue"><i>Sanjeev Gandhi</i></span><br/>
                     바스프(BASF)<br/>
                     아시아 지역 총괄 대표<br/>
-                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">연사 바로가기<i class="flaticon-arrows-3"></i></a>
+                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">상세이력 보기<i class="flaticon-arrows-3"></i></a>
                 </p>
             </div>
         </div>
@@ -745,7 +745,7 @@
                     <span class="name_blue"><i>Jim Rusk</i></span><br/>
                     지멘스(SIEMENS)<br/>
                     수석부사장 겸 CTO<br/>
-                    <a style="margin-top:10px;"class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">연사 바로가기<i class="flaticon-arrows-3"></i></a>
+                    <a style="margin-top:10px;"class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">상세이력 보기<i class="flaticon-arrows-3"></i></a>
                 </p>
             </div>
         </div>
@@ -769,7 +769,7 @@
                     <span class="name_blue"><i>Frank Schaefers</i></span><br/>
                     보쉬(Bosch)<br/>
                     한국법인 대표이사<br/>
-                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">연사 바로가기<i class="flaticon-arrows-3"></i></a>
+                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">상세이력 보기<i class="flaticon-arrows-3"></i></a>
                 </p>
             </div>
         </div>
@@ -794,7 +794,7 @@
                     <span class="name_blue"><i>Andre Nothomb</i></span><br/>
                     솔베이(SOLVAY)<br/>
                     아시아 태평양 지역본부 대표<br/>
-                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">연사 바로가기<i class="flaticon-arrows-3"></i></a>
+                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">상세이력 보기<i class="flaticon-arrows-3"></i></a>
                 </p>
             </div>
         </div>
@@ -818,7 +818,7 @@
                     <span class="name_blue"><i>Naoto Yanagihara</i></span><br/>
                     후지필름(FUJIFILM)<br/>
                     혁신전략 부사장<br/>
-                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">연사 바로가기<i class="flaticon-arrows-3"></i></a>
+                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">상세이력 보기<i class="flaticon-arrows-3"></i></a>
                 </p>
             </div>
         </div>
@@ -843,7 +843,7 @@
                     <span class="name_blue"><i>Semyon Kogan</i></span><br/>
                     GEN5 GROUP<br/>
                     대표이사<br/>
-                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">연사 바로가기<i class="flaticon-arrows-3"></i></a>
+                    <a style=" margin-top:10px; "class="btn btn-primary" href="/mobile/html/program/2016_speaker.asp" role="button">상세이력 보기<i class="flaticon-arrows-3"></i></a>
                 </p>
             </div>
         </div>

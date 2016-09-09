@@ -48,15 +48,15 @@ h4.strongElement span{display:block; border-left:5px #00A1E9 solid; padding-left
 .program_table ul:first-child{border:0 none;}
 .program_table ul li {margin-bottom: 10px; font-size: 14px;}
 .program_table ul li div span a {width: auto; display: inline-block;}
-.program_table ul li.chapter {font-size: 5vw; padding-top: 10px;}
+.program_table ul li.chapter {font-size: 5vw; padding-top: 10px;    text-align: center;}
 /*시간, 세션 나누기 관련*/
 .program_table ul li.program_time{font-size: 3.75vw; padding: 7px 0; margin: 0; width: 25%; position:absolute; top: 15px; right:15px; text-align: center; border-radius:5px;}
 /*ul border-top*/
-.program_table .gray_border{border-top: 1px #adadad solid;}
+/*.program_table .gray_border{border-top: 1px #adadad solid;}*/
 .program_table .gray_dash{border-top: 1px #adadad dashed;}
-.program_table .orange_border{border-top: 2px #ffc074 solid;}
+/*.program_table .orange_border{border-top: 2px #ffc074 solid;}
 .program_table .blue_border{border-top: 2px #5fafff solid;}
-.program_table .skyblue_border{border-top: 2px #3baec3 solid;}
+.program_table .skyblue_border{border-top: 2px #3baec3 solid;}*/
 /*개회사 등*/
 .program_table .first_li {padding-top: 15px;}
 .program_table .subtitle_01 {color:#333; display:block;}
@@ -67,7 +67,8 @@ h4.strongElement span{display:block; border-left:5px #00A1E9 solid; padding-left
 .program_table .font_orange {color:#ff8b00;}
 .program_table .font_skyblue {color:#207686;}
 /*section-background-color*/
-.program_table .black_box {background-color:#333; color:#fff;}
+.program_table .black_box {
+  background-color:#333; color:#fff;}
 .program_table .blue_box {background-color:#0364c4; color:#fff;}
 .program_table .gray_box{background-color : #a3a3a3; color:#fff;}
 .program_table .orange_box{background-color : #ff8b00; color:#fff;}

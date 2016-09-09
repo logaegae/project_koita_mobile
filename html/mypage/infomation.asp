@@ -141,22 +141,22 @@ margin-bottom: 30px;}
 
     <div class="list-infomation">
         <ul>
-          <li class="col-xs-6">
+          <li class="col-xs-12">
               <span>구분</span>
               <span>
 				<%if Reg_PType <> "" then%>회원사<%end if%>
 				<%if Reg_PType = "" then%>비회원사<%end if%>
 			  </span>
           </li>
-          <li class="col-xs-6">
+          <li class="col-xs-12">
               <span>소속 회사</span>
               <span><%=Reg_AffiliationK%> (<%=Reg_Affiliation%>)</span>
           </li>
-          <li class="col-xs-6">
+          <li class="col-xs-12">
               <span>성명</span>
               <span><%=Reg_Kname%> (<%=Reg_Fname%>&nbsp;<%=Reg_Lname%>)</span>
           </li>
-          <li class="col-xs-6">
+          <li class="col-xs-12">
                 <span>직급</span>
                 <span><%=Reg_PositionK%> (<%=Reg_Position%>)</span>
           </li>
@@ -225,7 +225,7 @@ margin-bottom: 30px;}
 		<div class="first-tap">
         <ul class="nav nav-pills nav-justified">
             <li class="active"><a href="infomation.asp">등록내역</a></li>
-            <li><a href="apply_confim.asp">참가신청현황</a></li>
+            <li><a href="apply_confim.asp">참가자현황</a></li>
             <li><a href="speech.asp">연사에게 질문하기</a></li>
         </ul>
     </div>

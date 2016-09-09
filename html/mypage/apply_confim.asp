@@ -115,7 +115,7 @@ float:right;
 
 
     <!-- 제목 -->
-    <h2 class="headding"><span>참가신청현황</span></h2>
+    <h2 class="headding"><span>참가자현황</span></h2>
 
 
     <!-- 단락 -->
@@ -228,14 +228,12 @@ If Not Rs.EOF Then
      </div>
       <div class="panel-body">
           <p>
-            <span class="definition">회사명 :</span>
-            <span><%=Reg_AffiliationK%></span> <br />
-            <span class="definition">이메일 :</span>
-            <span><%=Reg_Email%></span> <br />
-            <span class="definition">직급 :</span>
-            <span><%=Reg_PositionK%></span> <br />
             <span class="definition">성명 :</span>
             <span><%=Reg_Kname%></span>
+            <span class="definition"> / &nbsp 직급 :</span>
+            <span><%=Reg_PositionK%></span><br />
+            <span class="definition">이메일 :</span>
+            <span><%=Reg_Email%></span> <br />
          </p>
       </div>
     </div>
@@ -310,7 +308,7 @@ set dbconn = nothing
     <div class="first-tap">
         <ul class="nav nav-pills nav-justified">
             <li><a href="infomation.asp">등록내역</a></li>
-            <li class="active"><a href="apply_confim.asp">참가신청현황</a></li>
+            <li class="active"><a href="apply_confim.asp">참가자현황</a></li>
             <li><a href="speech.asp">연사에게 질문하기</a></li>
         </ul>
     </div>

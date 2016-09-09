@@ -14,6 +14,18 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                	<% if session("Reg_idx") <> "" then %>
+                        <li class="dropdown ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">마이페이지 <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="/mobile/html/mypage/infomation.asp">등록내역</a></li>
+                                <li><a href="/mobile/html/mypage/apply_confim.asp">참가자현황</a></li>
+                                <li><a href="/mobile/html/mypage/speech.asp">연사에게 질문하기</a></li>
+                                <li class="divider"></li>
+                            </ul>
+                        </li>
+					<% end if%>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">행사안내 <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -46,16 +58,6 @@
                     <li class="list-line"><a href="/mobile/html/contact/contact.asp">연락처</a></li>
 
                      <% if session("Reg_idx") <> "" then %>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">마이페이지 <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="/mobile/html/mypage/infomation.asp">등록내역</a></li>
-                                <li><a href="/mobile/html/mypage/apply_confim.asp">참가신청현황</a></li>
-                                <li><a href="/mobile/html/mypage/speech.asp">연사에게 질문하기</a></li>
-                                <li class="divider"></li>
-                            </ul>
-                        </li>
-
                         <li><a href="/mobile/html/login/doLogout.asp" class="flaticon-sign-in-1">로그아웃</a></li>
                      <% else %>
                         <li><a href="/mobile/html/login/login.asp" class="flaticon-sign-in">로그인</a></li>
@@ -63,7 +65,7 @@
 
 
                 </ul>
-                
+
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>

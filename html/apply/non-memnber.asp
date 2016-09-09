@@ -165,6 +165,10 @@ Admin_Note5 =  DbOutput(request("Admin_Note5"))
         .next_btn{
             margin-bottom:15px;
         }
+        #in_receiptN,#in_receiptY{
+            margin-top: -5px;
+            display:inline-block;
+        }
 
 
 		.SHbtn {
@@ -268,11 +272,11 @@ function FileUpload(obj,FileType,PopMsg){
 
                         <div class="input_box">
                             <label for="in_id">
-                                <div><em>*</em>아이디(이메일)</div>
+                                <span><em>*</em>아이디(이메일)</span>
                             </label>
                             <div class="form-inline">
                                 <div class="form-group">
-                                    <input type="email" name="Reg_Email" class="form-control" id="in_id" placeholder="" required value="<%=Reg_Email%>"/>
+                                    <input type="email" name="Reg_Email" class="form-control" id="in_id" placeholder="" required  value="<%=Reg_Email%>"/>
                                     <button class="btn btn-default" type="button" id="idCheck">중복체크</button>
                                 </div>
                             </div>
@@ -280,7 +284,7 @@ function FileUpload(obj,FileType,PopMsg){
 
                         <div class="input_box">
                             <label for="in_pw">
-                                <div><em>*</em>패스워드</div>
+                                <span><em>*</em>패스워드</span>
                             </label>
                             <div class="form-group">
                                 <input type="password" name="Reg_PW" class="form-control" id="in_pw" placeholder="비밀번호" required value="<%=Reg_PW%>" onchange="checkPW(this);"/>
@@ -304,7 +308,7 @@ function FileUpload(obj,FileType,PopMsg){
                             </label>
                             <div class="form-group">
                             <% if session("CompanyInfo_Name") <> "" then %>
-                                <input type="text" name="Reg_AffiliationK" value="<%=Reg_Kname%>" class="form-control" id="in_belongKR" placeholder="국문" required style="color:blue;"  readonly="readonly" value="<%=session("CompanyInfo_Name")%>"/>
+                                <input type="text" name="Reg_AffiliationK" class="form-control" id="in_belongKR" placeholder="국문" required style="color:blue;"  readonly="readonly" value="<%=session("CompanyInfo_Name")%>"/>
                             <% else %>
                             	<input type="text" name="Reg_AffiliationK" value="<%=Reg_AffiliationK%>" class="form-control" id="in_belongKR" placeholder="국문" required />
                             <% end if%>
@@ -326,9 +330,9 @@ function FileUpload(obj,FileType,PopMsg){
                             </label>
                             <div class="form-inline">
                                 <div class="form-group text-center tel">
-                                    <input type="text" name="Reg_Mobile2" value="<%=Reg_Mobile2%>" maxlength="3" class="form-control" id="in_telFirst" required/> -
-                                    <input type="text" name="Reg_Mobile3" value="<%=Reg_Mobile3%>" maxlength="4" class="form-control" id="in_telMiddle" required/> -
-                                    <input type="text" name="Reg_Mobile4" value="<%=Reg_Mobile4%>" maxlength="4" class="form-control" id="in_telLast" required/>
+                                    <input type="number" name="Reg_Mobile2" value="<%=Reg_Mobile2%>" maxlength="3" class="form-control" id="in_telFirst" required/> -
+                                    <input type="number" name="Reg_Mobile3" value="<%=Reg_Mobile3%>" maxlength="4" class="form-control" id="in_telMiddle" required/> -
+                                    <input type="number" name="Reg_Mobile4" value="<%=Reg_Mobile4%>" maxlength="4" class="form-control" id="in_telLast" required/>
                                 </div>
                             </div>
                             <p>예) 010-1234-1234</p>
@@ -374,10 +378,10 @@ function FileUpload(obj,FileType,PopMsg){
                             </label>
                             <div>
                                 <label class="radio-inline">
-                                    <input type="radio"  name="Reg_PayTexV" id="in_receiptY" value="Y" required <%if Reg_PayTexV = "Y" then%>checked="checked"<%end if%>> 발행
+                                    <input type="radio"  name="Reg_PayTexV" id="in_receiptY" value="Y" <%if Reg_PayTexV = "Y" then%>checked="checked"<%end if%>> 발행
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name="Reg_PayTexV" id="in_receiptN" value="N" required <%if Reg_PayTexV = "N" then%>checked="checked"<%end if%>> 미발행
+                                    <input type="radio" name="Reg_PayTexV" id="in_receiptN" value="N" <%if Reg_PayTexV = "N" then%>checked="checked"<%end if%>> 미발행
                                 </label>
                             </div>
                         </div>
@@ -408,6 +412,12 @@ function FileUpload(obj,FileType,PopMsg){
 
     	$(document).ready(function () {
 
+    		$("#in_receiptY").click(function () {
+    			alert('세금계산서 발행은 PC버전에서 신청해주십시요.');
+    			$("#in_receiptY").prop('checked', false);
+    			return false;
+    		});
+
 
     		// 아이디 중복체크
     		$("#idCheck").click(function () {
@@ -435,6 +445,29 @@ function FileUpload(obj,FileType,PopMsg){
     			if($("input[name='Reg_PW']").val() != $("input[name='Reg_PW_ck']").val()) {
     				alert("비밀번호가 맞지 않습니다.");
     				$("input[name='Reg_PW']").focus();
+    				return false;
+    			}
+
+    			var isRequired = false;
+    			$("input[required]").each(function () {
+
+    				if($(this).val() == "") {
+    					var name = $(this).parents(".input_box").find("label>span").text();
+    					alert(name+"을 입력해 주십시요.");
+
+    					$('html, body').animate({
+    				            scrollTop: $(this).offset().top-175
+    				        },300, function() {
+    				        	$(this).focus();
+    				        });
+
+    					isRequired = true;
+    					return false;
+    				}
+    			});
+
+    			if(isRequired == true) {
+    				return false;
     			}
 
     		});
@@ -486,6 +519,7 @@ function FileUpload(obj,FileType,PopMsg){
 				return;
 			}
 		}
+
 	</script>
 </div>
 <!--#include virtual="/mobile/html/inc/footer.asp"-->

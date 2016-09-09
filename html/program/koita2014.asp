@@ -38,8 +38,8 @@
           <li class="program_time black_box"><strong>09:00~09:40</strong></li>
           <li class="chapter"><strong>등록</strong></li>
       </ul>
-      <ul class="gray_box">
-          <li class="program_time break_gray">
+      <ul class="gray_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+          <li class="program_time black_box">
             <strong>09:40~10:00</strong>
           </li>
           <li class="chapter"><strong>인사말</strong></li>
@@ -85,11 +85,11 @@
               </div>
           </li>
         </ul>
-        <ul class="orange_box">
-            <li class="program_time chapter1_orange">
+        <ul class="orange_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+            <li class="program_time orange_box">
               <strong>10:00~12:30</strong>
             </li>
-            <li class="chapter"><strong>Session I : [Great Change]</strong></li>
+            <li class="chapter"><strong>Session I</strong></li>
         </ul>
         <ul class="orange_border">
             <li>
@@ -105,17 +105,17 @@
                 </div>
             </li>
           </ul>
-          <ul class="gray_box">
-              <li class="program_time break_gray">
+          <ul class="gray_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+              <li class="program_time gray_box">
                 <strong>12:30~13:30</strong>
               </li>
               <li class="chapter"><strong>오찬</strong></li>
           </ul>
-          <ul class="skyblue_box">
-              <li class="program_time chapter2_skyblue">
+          <ul class="skyblue_box" style="background-color: transparent; color: #333; border-top: 1px #adadad dashed; border-bottom: 1px #adadad dashed;">
+              <li class="program_time skyblue_box">
                 <strong>13:30~16:00</strong>
               </li>
-              <li class="chapter"><strong>Session II : [Sustainability]</strong></li>
+              <li class="chapter"><strong>Session II</strong></li>
           </ul>
           <ul class="skyblue_border">
               <li>
